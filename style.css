@@ -1,7 +1,7 @@
 html {
     font-size: 10px;
-    background: darkgray;
-    background-size: cover;
+    /* background: darkgray; */
+    /* background-size: cover; */
 }
 
 body,
@@ -18,10 +18,24 @@ h1 {
     font-weight: bolder;
 }
 
-.keys {
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+
+}
+
+.keys {
     flex: 1;
-    min-height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
